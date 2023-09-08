@@ -8,7 +8,7 @@ mongoose.connect(uri, {useNewUrlParser: true,
   useUnifiedTopology: true,
 })
   .then((con) => {
-    console.log(con.connections)
+    // console.log(con.connections)
     console.log('Connected to MongoDB');
     console.log(process.env.NODE_ENV);
     // Your application logic goes here
