@@ -33,9 +33,6 @@ app.use(express.json());
 
 app.use((req, res, next) => {
   console.log('Hello from the middleware 👋');
-  res.status(200).json({
-    message: 'City not found in the specified state',
-  })
   next();
 });
 
