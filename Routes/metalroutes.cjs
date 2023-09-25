@@ -17,8 +17,8 @@ router.get('/categories', async (req, res) => {
 router.get('/categories/:category/subcategories', async (req, res) => {
   const category = req.params.category;
   try {
-    const data = await model.findOne({ category });
-
+    const data = await model.findOne({ 'category':category });
+    console.log(data)
     if (!data) {
       return res.status(404).json({ message: 'Category not found' });
     }
@@ -36,69 +36,77 @@ router.get('/categories/:category/subcategories', async (req, res) => {
 
 // Route to get category and subcategory data
 // Route to get all items data within a subcategory
-router.get('/categories/:category/subcategories/:subcategory', async (req, res) => {
-    const category = req.params.category;
-    const subcategory = req.params.subcategory;
-    try {
-      const data = await model.findOne({
-        'subcategories.name': category,
-        'subcategories.data.name': subcategory,
-      });
-  
-      if (!data) {
-        return res.status(404).json({ message: 'Category or subcategory not found' });
-      }
-  
-      const subcategoryData = data.subcategories.find((sub) => sub.name === category);
-  
-      if (!subcategoryData) {
-        return res.status(404).json({ message: 'Subcategory not found' });
-      }
-  
-      const allItemData = subcategoryData.data;
-  
-      if (!allItemData || allItemData.length === 0) {
-        return res.status(404).json({ message: 'No items found in the subcategory' });
-      }
-  
-      res.status(200).json(allItemData);
-    } catch (error) {
-      res.status(500).json({ message: err });
-    }
-  });
-  
-
-// Route to get item data within a subcategory
-router.get('/categories/:category/subcategories/:subcategory/items/:itemName', async (req, res) => {
+router.get('/categories/:category/:subcategory', async (req, res) => {
   const category = req.params.category;
   const subcategory = req.params.subcategory;
-  const itemName = req.params.itemName;
+
   try {
+    // Find a document where 'category' matches the provided category
+    // and 'subcategories.name' matches the provided subcategory
     const data = await model.findOne({
-      'subcategories.name': category,
-      'subcategories.data.name': subcategory,
+      'category': category,
+      'subcategories.name': subcategory,
     });
 
     if (!data) {
       return res.status(404).json({ message: 'Category or subcategory not found' });
     }
 
-    const subcategoryData = data.subcategories.find((sub) => sub.name === category);
+    const filteredData = [];
 
-    if (!subcategoryData) {
-      return res.status(404).json({ message: 'Subcategory not found' });
+    for (const subcategoryItem of data.subcategories) {
+      if (subcategoryItem.name === subcategory) {
+        filteredData.push(subcategoryItem.data);
+      }
     }
 
-    const itemData = subcategoryData.data.find((item) => item.name === itemName);
-
-    if (!itemData) {
-      return res.status(404).json({ message: 'Item not found' });
+    if (!filteredData || filteredData.length === 0) {
+      return res.status(404).json({ message: 'No items found in the subcategory' });
     }
 
-    res.status(200).json(itemData);
+    res.status(200).json(filteredData);
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+});
+
+
+// Route to get item data within a subcategory
+router.get('/categories/:category/:subcategory/:itemName', async (req, res) => {
+  const category = req.params.category;
+  const subcategory = req.params.subcategory;
+  const itemName = req.params.itemName;
+
+  try {
+    const data = await model.findOne({
+      'subcategories.name': subcategory,
+      'subcategories.data.name': itemName,
+    });
+
+    if (!data) {
+      return res.status(404).json({ message: 'Category, subcategory, or item not found' });
+    }
+
+    const filteredData = [];
+
+    for (const subcategoryItem of data.subcategories) {
+      if (subcategoryItem.name === subcategory) {
+        const itemData = subcategoryItem.data.find((item) => item.name === itemName);
+        if (itemData) {
+          filteredData.push({ subcategory: subcategoryItem.name, itemData });
+        }
+      }
+    }
+
+    if (filteredData.length === 0) {
+      return res.status(404).json({ message: 'Item not found in the subcategory' });
+    }
+
+    res.status(200).json(filteredData);
   } catch (error) {
     res.status(500).json({ message: 'Internal server error' });
   }
 });
+
 
 module.exports = router;

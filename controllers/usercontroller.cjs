@@ -2,7 +2,7 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const jwt = require('jsonwebtoken');
-const {User,OauthUser} = require('../models/usermodel.cjs'); // Replace with the actual path to your User model
+const User = require('../models/usermodel.cjs'); // Replace with the actual path to your User model
 const validator = require('validator');
 
 exports.signup = async (req, res, next) => {
@@ -25,7 +25,7 @@ exports.login = async (req, res, next) => {
 
     try {
         const user = await User.findOne({ email });
-
+        console.log(user);
         if (!user) {
             return res.status(401).json({ message: 'Authentication failed. User not found.' });
         }
