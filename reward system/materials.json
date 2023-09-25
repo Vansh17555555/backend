@@ -1,0 +1,337 @@
+
+  
+  [{
+    "category": "Small Household Appliances",
+    "subcategories": [
+      {
+        "name": "Kitchen Appliances",
+        "data": [
+          {
+            "name": "Toasters",
+            "data": {
+              "Gold": 0.2,
+              "Silver": 0.1
+            }
+          },
+          {
+            "name": "Coffee Makers",
+            "data": {
+              "Gold": 0.3,
+              "Silver": 0.15
+            }
+          }
+        ]
+      },
+      {
+        "name": "Blenders & Microwaves",
+        "data": [
+          {
+            "name": "Blenders",
+            "data": {
+              "Gold": 0.25,
+              "Silver": 0.12
+            }
+          },
+          {
+            "name": "Microwaves",
+            "data": {
+              "Gold": 0.4,
+              "Silver": 0.2
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "category": "Large Household Appliances",
+    "subcategories": [
+      {
+        "name": "Refrigerators & Washing Machines",
+        "data": [
+          {
+            "name": "Refrigerators",
+            "data": {
+              "Gold": 0.6,
+              "Silver": 0.3
+            }
+          },
+          {
+            "name": "Washing Machines",
+            "data": {
+              "Gold": 0.5,
+              "Silver": 0.25
+            }
+          }
+        ]
+      },
+      {
+        "name": "Dishwashers & Ovens",
+        "data": [
+          {
+            "name": "Dishwashers",
+            "data": {
+              "Gold": 0.4,
+              "Silver": 0.2
+            }
+          },
+          {
+            "name": "Ovens",
+            "data": {
+              "Gold": 0.6,
+              "Silver": 0.3
+            }
+          }
+        ]
+      }
+    ]
+  }
+
+
+      {
+        "category": "ICT",
+        "subcategories": [
+          {
+            "name": "Computers",
+            "data": [
+              {
+                "name": "Desktop Computers",
+                "data": {
+                  "Gold": 10,
+                  "Silver": 5
+                }
+              },
+              {
+                "name": "Laptop Computers",
+                "data": {
+                  "Gold": 5,
+                  "Silver": 2
+                }
+              },
+              {
+                "name": "Servers",
+                "data": {
+                  "Gold": 8,
+                  "Silver": 4,
+                  "Palladium": 1,
+                  "Platinum": 1
+                }
+              },
+              {
+                "name": "Workstations",
+                "data": {
+                  "Gold": 5,
+                  "Silver": 3,
+                  "Palladium": 1,
+                  "Platinum": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Mobile Devices",
+            "data": [
+              {
+                "name": "Smartphones",
+                "data": {
+                  "Gold": 6,
+                  "Silver": 2
+                }
+              },
+              {
+                "name": "Tablets",
+                "data": {
+                  "Gold": 3,
+                  "Silver": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Network Equipment",
+            "data": [
+              {
+                "name": "Routers",
+                "data": {
+                  "Gold": 4,
+                  "Silver": 2
+                }
+              },
+              {
+                "name": "Switches",
+                "data": {
+                  "Gold": 3,
+                  "Silver": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Communication Devices",
+            "data": [
+              {
+                "name": "Smartphones",
+                "data": {
+                  "Gold": 6,
+                  "Silver": 3
+                }
+              },
+              {
+                "name": "Tablets",
+                "data": {
+                  "Gold": 3,
+                  "Silver": 1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Storage Devices",
+            "data": [
+              {
+                "name": "Hard Drives (HDD)",
+                "data": {
+                  "Gold": 4,
+                  "Silver": 2
+                }
+              },
+              {
+                "name": "Solid State Drives (SSD)",
+                "data": {
+                  "Gold": 2,
+                  "Silver": 1
+                }
+              },
+              {
+                "name": "Flash Drives (USB)",
+                "data": {
+                  "Gold": 1,
+                  "Silver": 0.5
+                }
+              }
+            ]
+          },
+          {
+            "name": "Peripherals",
+            "data": [
+              {
+                "name": "Keyboards",
+                "data": {
+                  "Gold": 0.5,
+                  "Silver": 0.2
+                }
+              },
+              {
+                "name": "Mice",
+                "data": {
+                  "Gold": 0.3,
+                  "Silver": 0.1
+                }
+              },
+              {
+                "name": "Monitors",
+                "data": {
+                  "Gold": 0.5,
+                  "Silver": 0.3,
+                  "Palladium": 0.1
+                }
+              },
+              {
+                "name": "Printers",
+                "data": {
+                  "Gold": 0.4,
+                  "Silver": 0.2
+                }
+              }
+            ]
+          },
+          {
+            "name": "Audio-Visual Equipment",
+            "data": [
+              {
+                "name": "Televisions",
+                "data": {
+                  "Gold": 0.5,
+                  "Silver": 0.3
+                }
+              },
+              {
+                "name": "Cameras",
+                "data": {
+                  "Gold": 0.3,
+                  "Silver": 0.2
+                }
+              },
+              {
+                "name": "Projectors",
+                "data": {
+                  "Gold": 0.4,
+                  "Silver": 0.2
+                }
+              },
+              {
+                "name": "Speakers",
+                "data": {
+                  "Gold": 0.3,
+                  "Silver": 0.1
+                }
+              }
+            ]
+          },
+          {
+            "name": "Gaming Consoles",
+            "data": [
+              {
+                "name": "PlayStation",
+                "data": {
+                  "Gold": 0.5,
+                  "Silver": 0.2
+                }
+              },
+              {
+                "name": "Xbox",
+                "data": {
+                  "Gold": 0.4,
+                  "Silver": 0.15
+                }
+              },
+              {
+                "name": "Nintendo Switch",
+                "data": {
+                  "Gold": 0.4,
+                  "Silver": 0.15
+                }
+              }
+            ]
+          },
+          {
+            "name": "Wearable Devices",
+            "data": [
+              {
+                "name": "Smartwatches",
+                "data": {
+                  "Gold": 0.3,
+                  "Silver": 0.1
+                }
+              },
+              {
+                "name": "Fitness Trackers",
+                "data": {
+                  "Gold": 0.2,
+                  "Silver": 0.1
+                }
+              },
+              {
+                "name": "Hearables (Earbuds)",
+                "data": {
+                  "Gold": 0.15,
+                  "Silver": 0.05
+                }
+              }
+            ]
+          }
+        ]
+      }
+
+    
+  ]
