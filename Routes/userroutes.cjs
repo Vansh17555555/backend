@@ -5,5 +5,6 @@ const usercontroller = require('../controllers/usercontroller.cjs');
 router.post('/signup', usercontroller.signup);
 router.post('/login', usercontroller.login);
 router.get('/:name',usercontroller.getUserByUsername);
-// OAuth routes
+router.put('/:userId/updatecartdata', usercontroller.updatecartdata);
+
 module.exports = router;

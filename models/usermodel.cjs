@@ -33,7 +33,7 @@ const userSchema = new mongoose.Schema({
   ],
   cart: [
     {
-      material: {
+      cartId: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'UnifiedData', // Reference to the Material model
       },

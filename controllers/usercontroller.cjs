@@ -60,13 +60,10 @@ exports.getUserByUsername = async (req, res, next) => {
         next(error);
     }
 };
-exports.updatecartdata=async(req,res,next)=>{
-    const { User } = require('./models'); // Import your User model
-
 exports.updatecartdata = async (req, res, next) => {
   try {
     const { userId } = req.params;
-    const { unifiedDataid, quantity } = req.body; 
+    const { cartid, quantity } = req.body; 
 
     // Find the user by userId
     const user = await User.findById(userId);
@@ -76,7 +73,7 @@ exports.updatecartdata = async (req, res, next) => {
     }
 
     const existingCartItem = user.cart.find(
-      (item) => item.unifiedDataid.toString() === unifiedDataid
+      (item) => item.cartId.toString() === unifiedDataid
     );
 
     if (existingCartItem) {
