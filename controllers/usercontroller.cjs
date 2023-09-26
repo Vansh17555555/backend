@@ -39,8 +39,23 @@ exports.login = async (req, res, next) => {
 
             res.status(200).json({ message: 'Authentication successful', user });
         } else {
-            res.status(401).json({ message: 'Authentication failed. Incorrect password.' });
+            res.status(401).json({jwt });
         }
+    } catch (error) {
+        next(error);
+    }
+};
+exports.getUserByUsername = async (req, res, next) => {
+    const username = req.params.username; 
+    try {
+        const user = await User.findOne({ username });
+
+        if (!user) {
+            return res.status(404).json({ message: 'User not found' });
+        }
+
+        // Send the user data as a response
+        res.status(200).json({ user });
     } catch (error) {
         next(error);
     }

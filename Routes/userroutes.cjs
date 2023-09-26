@@ -4,6 +4,6 @@ const usercontroller = require('../controllers/usercontroller.cjs');
 // Existing signup and login routes
 router.post('/signup', usercontroller.signup);
 router.post('/login', usercontroller.login);
-
+router.get('/:name',usercontroller.getUserByUsername);
 // OAuth routes
 module.exports = router;
