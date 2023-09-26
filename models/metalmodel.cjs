@@ -10,16 +10,19 @@ const metalSchema = new mongoose.Schema({
 
 const itemSchema = new mongoose.Schema({
   name: String,
+  img:String,
   data: metalSchema,
 });
 
 const subcategorySchema = new mongoose.Schema({
   name: String,
+  img:String,
   data: [itemSchema],
 });
 
 const categorySchema = new mongoose.Schema({
   category: String,
+  img:String,
   subcategories: [subcategorySchema],
 });
 

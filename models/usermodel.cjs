@@ -31,6 +31,18 @@ const userSchema = new mongoose.Schema({
       metalRecoveryPoints: Number,
     },
   ],
+  cart: [
+    {
+      material: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'UnifiedData', // Reference to the Material model
+      },
+      quantity: {
+        type: Number,
+        default: 0, // Default quantity is 0 if not specified
+      },
+    },
+  ]
 });
 
 // Define the OAuth-specific schema for OAuth-based users

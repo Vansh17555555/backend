@@ -1,6 +1,6 @@
 const fs = require('fs');
 const mongoose = require('mongoose');
-const MetalModel = require('./models/metalmodel.cjs');
+const MetalModel = require('./models/usermodel.cjs');
 
 // Provide your MongoDB Atlas connection string here
 const DB = 'mongodb+srv://Vansh:12345678Rt.@cluster0.j5sgoz0.mongodb.net/';

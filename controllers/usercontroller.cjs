@@ -60,3 +60,36 @@ exports.getUserByUsername = async (req, res, next) => {
         next(error);
     }
 };
+exports.updatecartdata=async(req,res,next)=>{
+    const { User } = require('./models'); // Import your User model
+
+exports.updatecartdata = async (req, res, next) => {
+  try {
+    const { userId } = req.params;
+    const { unifiedDataid, quantity } = req.body; 
+
+    // Find the user by userId
+    const user = await User.findById(userId);
+
+    if (!user) {
+      return res.status(404).json({ message: 'User not found' });
+    }
+
+    const existingCartItem = user.cart.find(
+      (item) => item.unifiedDataid.toString() === unifiedDataid
+    );
+
+    if (existingCartItem) {
+      
+      existingCartItem.quantity = quantity;
+    } else {
+      user.cart.push({ unifiedDataid, quantity });
+    }
+    await user.save();
+    res.status(200).json({ message: 'Cart updated successfully', user });
+  } catch (error) {
+    next(error);
+  }
+};
+
+}

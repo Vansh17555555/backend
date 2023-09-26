@@ -1,13 +1,18 @@
 
   
+ 
+  
   [{
     "category": "Small Household Appliances",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFBPREETrrL57jyHkn1A8pJbjVrjhS3QvcQ&usqp=CAU",
     "subcategories": [
       {
         "name": "Kitchen Appliances",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRH9ZnV2YHw_Cblebjlrh0ZAzmfW5Vs5LIiJw&usqp=CAU",
         "data": [
           {
             "name": "Toasters",
+            "img": " https://cdn.pixelbin.io/v2/jmd-asp/jdprod/wrkr/jioretailer/products/pictures/item/free/original/Ph651P4412-kelvinator-kptpm0022s-popuptoasters-491903081-i-1-1200wx1200h.jpeg",
             "data": {
               "Gold": 0.2,
               "Silver": 0.1
@@ -15,6 +20,7 @@
           },
           {
             "name": "Coffee Makers",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdvtvwPZBC6mO6As1o1Sc97eFkiqP12q-72g&usqp=CAU",
             "data": {
               "Gold": 0.3,
               "Silver": 0.15
@@ -24,9 +30,11 @@
       },
       {
         "name": "Blenders & Microwaves",
+        "img":"https://c8.alamy.com/comp/FFGD9J/kitchen-appliances-blender-toaster-coffee-machine-meat-ginder-microwave-FFGD9J.jpg",
         "data": [
           {
             "name": "Blenders",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRYQ526IhsxYUJS646nGDxXjxTrc_0wNcmVWw&usqp=CAU",
             "data": {
               "Gold": 0.25,
               "Silver": 0.12
@@ -34,6 +42,7 @@
           },
           {
             "name": "Microwaves",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQsF3D6Tsdrujsb9wHOwbcRlrfUZCgtkcTRA&usqp=CAU",
             "data": {
               "Gold": 0.4,
               "Silver": 0.2
@@ -45,12 +54,15 @@
   },
   {
     "category": "Large Household Appliances",
+    "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsFBPREETrrL57jyHkn1A8pJbjVrjhS3QvcQ&usqp=CAU",
     "subcategories": [
       {
         "name": "Refrigerators & Washing Machines",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QywiozKDFhp_YaUkcj68e-DZEfK16TdBVw&usqp=CAU",
         "data": [
           {
             "name": "Refrigerators",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEvvrK1LYAQ09pOGlMGexnC2ngvD_UXNPmyA&usqp=CAU",
             "data": {
               "Gold": 0.6,
               "Silver": 0.3
@@ -58,6 +70,7 @@
           },
           {
             "name": "Washing Machines",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfedF4E9Kc_UmnHTY5iHPOA3QnAiYvAhQkUQ&usqp=CAU",
             "data": {
               "Gold": 0.5,
               "Silver": 0.25
@@ -67,9 +80,11 @@
       },
       {
         "name": "Dishwashers & Ovens",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT8QywiozKDFhp_YaUkcj68e-DZEfK16TdBVw&usqp=CAU",
         "data": [
           {
             "name": "Dishwashers",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRC9p4nSihf5SZrTgVquc0Q2MGjxZN1EonE7Q&usqp=CAU",
             "data": {
               "Gold": 0.4,
               "Silver": 0.2
@@ -77,6 +92,7 @@
           },
           {
             "name": "Ovens",
+            "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3xlI-mbT-0lnAK3fk_IVioyGEkKQ8AWGDw&usqp=CAU",
             "data": {
               "Gold": 0.6,
               "Silver": 0.3
@@ -85,17 +101,20 @@
         ]
       }
     ]
-  }
+  },
 
 
       {
         "category": "ICT",
+        "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY5dIJNlM5fTlB0f1SyoSVTNArPjX3zwrtJ5SvatFhC5N6XYcUo69Xq3_T9-TnLmWbmgM&usqp=CAU",
         "subcategories": [
           {
             "name": "Computers",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThVkcbIPLgJ_6zkZX4yrvKleV7zeImWDpQ_A&usqp=CAU",
             "data": [
               {
                 "name": "Desktop Computers",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy3xlI-mbT-0lnAK3fk_IVioyGEkKQ8AWGDw&usqp=CAU",
                 "data": {
                   "Gold": 10,
                   "Silver": 5
@@ -103,6 +122,7 @@
               },
               {
                 "name": "Laptop Computers",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqzADBDlW9odOoJHt3NcxDDCH_tHfWgUGNaA&usqp=CAU",
                 "data": {
                   "Gold": 5,
                   "Silver": 2
@@ -110,6 +130,7 @@
               },
               {
                 "name": "Servers",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_X2IzJp-yy1kfKJEXAwlbhKXhSGexAe5LrA&usqp=CAU",
                 "data": {
                   "Gold": 8,
                   "Silver": 4,
@@ -119,6 +140,7 @@
               },
               {
                 "name": "Workstations",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHi_m1MuJ3QkT7o2tUNW5fp_ARgMtpfxcb3g&usqp=CAU",
                 "data": {
                   "Gold": 5,
                   "Silver": 3,
@@ -130,9 +152,11 @@
           },
           {
             "name": "Mobile Devices",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMg8FlN5XFY5rVCqVJTi6WLmVwYD44vTuLDA&usqp=CAU",
             "data": [
               {
                 "name": "Smartphones",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS6H-8IFAbdt_TgpdE110CK6RDmGbGeTY2Tog&usqp=CAU",
                 "data": {
                   "Gold": 6,
                   "Silver": 2
@@ -140,6 +164,7 @@
               },
               {
                 "name": "Tablets",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlGKi6PQg7tBxLqiXOarzMqF5LHrWbC9oGTZem2aC2ZSrUtLcMmKKBwCvC8pe0xVYcne0&usqp=CAU",
                 "data": {
                   "Gold": 3,
                   "Silver": 1
@@ -149,9 +174,11 @@
           },
           {
             "name": "Network Equipment",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtzmKG8_g9TIiyQO-cJPI7iQ_5U3t7el_cPw&usqp=CAU",
             "data": [
               {
                 "name": "Routers",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9rXSYzBk_qrIf2Bu3RaRUaebi4N95IQk77g&usqp=CAU",
                 "data": {
                   "Gold": 4,
                   "Silver": 2
@@ -159,25 +186,7 @@
               },
               {
                 "name": "Switches",
-                "data": {
-                  "Gold": 3,
-                  "Silver": 1
-                }
-              }
-            ]
-          },
-          {
-            "name": "Communication Devices",
-            "data": [
-              {
-                "name": "Smartphones",
-                "data": {
-                  "Gold": 6,
-                  "Silver": 3
-                }
-              },
-              {
-                "name": "Tablets",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFl2b7yMiPA3MNueqLu2s-iqLQG2CZZMU9Tg&usqp=CAU",
                 "data": {
                   "Gold": 3,
                   "Silver": 1
@@ -187,9 +196,11 @@
           },
           {
             "name": "Storage Devices",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSiqA0UrAhPCdAfAYanSt-ikXst0cQq1MWhQA&usqp=CAU",
             "data": [
               {
                 "name": "Hard Drives (HDD)",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTJRanjpo808NXW2yMomCT4oXnJ6SMbqzlcPg&usqp=CAU",
                 "data": {
                   "Gold": 4,
                   "Silver": 2
@@ -197,6 +208,7 @@
               },
               {
                 "name": "Solid State Drives (SSD)",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfoyKx_Jh4MRpfVTCZkRrKaIT0nkhUWyh7uA&usqp=CAU",
                 "data": {
                   "Gold": 2,
                   "Silver": 1
@@ -204,6 +216,7 @@
               },
               {
                 "name": "Flash Drives (USB)",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhronz4QmLQlyaXH8-HxYbFNbpebf-yp7aTg&usqp=CAU",
                 "data": {
                   "Gold": 1,
                   "Silver": 0.5
@@ -213,9 +226,11 @@
           },
           {
             "name": "Peripherals",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaraRHI2k-4wsXkKZaZA8XTZDtKdaA3GlO1w&usqp=CAU",
             "data": [
               {
                 "name": "Keyboards",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfIpWFOk1lzW5CxvJI0lbGfPn2ZhvT7oJt1A&usqp=CAU",
                 "data": {
                   "Gold": 0.5,
                   "Silver": 0.2
@@ -223,6 +238,7 @@
               },
               {
                 "name": "Mice",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzBmPW-fzMQ9ZdlD_iVS0yQOKwgrbz5b6Ohg&usqp=CAU",
                 "data": {
                   "Gold": 0.3,
                   "Silver": 0.1
@@ -230,6 +246,7 @@
               },
               {
                 "name": "Monitors",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQx4-SyaC7h5vORIm9-vHv2E91tudMw2W-nhg&usqp=CAU",
                 "data": {
                   "Gold": 0.5,
                   "Silver": 0.3,
@@ -238,6 +255,7 @@
               },
               {
                 "name": "Printers",
+                "img":" https://media.istockphoto.com/id/171574641/photo/inkjet-printer.jpg?s=612x612&w=0&k=20&c=yTeDKqcukYrCs-NKcZu05Ou0CwnK8CDnUL3bywR5xuk=",
                 "data": {
                   "Gold": 0.4,
                   "Silver": 0.2
@@ -247,9 +265,11 @@
           },
           {
             "name": "Audio-Visual Equipment",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS2Vq8-xviQlLJ3cw_UDngvwUD5e3PSgP_yMA&usqp=CAU",
             "data": [
               {
                 "name": "Televisions",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQheTxsy8uQ3wjaqDLNjnTol3bF8Ascwp15Bg&usqp=CAU",
                 "data": {
                   "Gold": 0.5,
                   "Silver": 0.3
@@ -257,6 +277,7 @@
               },
               {
                 "name": "Cameras",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTiUgD1XM2-cZqcoqcvXFPknKRhfaP8cbiezQ&usqp=CAU",
                 "data": {
                   "Gold": 0.3,
                   "Silver": 0.2
@@ -264,6 +285,7 @@
               },
               {
                 "name": "Projectors",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2R7IU1S8tdhXz0mpWJppNWSwTAJ1KhYjSg&usqp=CAU",
                 "data": {
                   "Gold": 0.4,
                   "Silver": 0.2
@@ -271,6 +293,7 @@
               },
               {
                 "name": "Speakers",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpsU6R8VsnhqsGTSYN5VFK38gkYEWaCcHqhA&usqp=CAU",
                 "data": {
                   "Gold": 0.3,
                   "Silver": 0.1
@@ -280,9 +303,11 @@
           },
           {
             "name": "Gaming Consoles",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRMU0lm0SytShYzIV8D_ryBgrHdFOoPXG7shg&usqp=CAU",
             "data": [
               {
                 "name": "PlayStation",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRbhIyjE8quqnAx7Lkm6NpDIqx9lUA2zSHmEg&usqp=CAU",
                 "data": {
                   "Gold": 0.5,
                   "Silver": 0.2
@@ -290,6 +315,7 @@
               },
               {
                 "name": "Xbox",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTM5ImMBbayR8v4llSSAZ_alqbhDeQWp8CnoA&usqp=CAU",
                 "data": {
                   "Gold": 0.4,
                   "Silver": 0.15
@@ -297,6 +323,7 @@
               },
               {
                 "name": "Nintendo Switch",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_3ZW7ABYWQHcsn-_jBaioAW9SEnyxmBiDhA&usqp=CAU",
                 "data": {
                   "Gold": 0.4,
                   "Silver": 0.15
@@ -306,9 +333,11 @@
           },
           {
             "name": "Wearable Devices",
+            "img":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQWTmP77TmWsfgSi-Y5XEZCuFuVxqTrYxMeDQ&usqp=CAU",
             "data": [
               {
                 "name": "Smartwatches",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMK36oosvWw0Sj35AdGSRxsq_seBKv5p4L9tPgizNGhhfHXW_tusByoPpKFvAXDza7A2w&usqp=CAU",
                 "data": {
                   "Gold": 0.3,
                   "Silver": 0.1
@@ -316,6 +345,7 @@
               },
               {
                 "name": "Fitness Trackers",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoTcJ-3RJaFL-zxM4PXBVBJEFlT8bSJ14L-g&usqp=CAU",
                 "data": {
                   "Gold": 0.2,
                   "Silver": 0.1
@@ -323,6 +353,7 @@
               },
               {
                 "name": "Hearables (Earbuds)",
+                "img":" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhG8CEO5DkzeZwm5GjgXvP2GUtAjjrRIpfo3Lld7Bj9iBcoFeRQsuGk07a9PnJksYktmA&usqp=CAU",
                 "data": {
                   "Gold": 0.15,
                   "Silver": 0.05
