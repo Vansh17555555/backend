@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 const bcryptjs = require('bcryptjs');
-const UnifiedData=require('./../models/metalmodel');
+const UnifiedData=require('./../models/metalmodel.cjs');
 // Define the base user schema for email/password-based users
 const userSchema = new mongoose.Schema({
   username: {

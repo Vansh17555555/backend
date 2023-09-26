@@ -61,32 +61,35 @@ exports.getUserByUsername = async (req, res, next) => {
     }
 };
 exports.updatecartdata = async (req, res, next) => {
-  try {
-    const { userId } = req.params;
-    const { cartid, quantity } = req.body; 
-
-    // Find the user by userId
-    const user = await User.findById(userId);
-
-    if (!user) {
-      return res.status(404).json({ message: 'User not found' });
+    try {
+      const { userId } = req.params;
+      const { cartId, quantity } = req.body;
+  
+      // Find the user by userId
+      const user = await User.findById(userId);
+  
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+  
+      // Check if the cartId already exists in the user's cart
+      const existingCartItemIndex = user.cart.findIndex(
+        (item) => item.cartId.toString() === cartId
+      );
+  
+      if (existingCartItemIndex !== -1) {
+        // If the cartId already exists in the cart, update its quantity
+        user.cart[existingCartItemIndex].quantity += quantity;
+      } else {
+        // If the cartId does not exist in the cart, add it with the specified quantity
+        user.cart.push({ cartId, quantity });
+      }
+  
+      await user.save();
+  
+      res.status(200).json({ message: 'Cart updated successfully', user });
+    } catch (error) {
+      next(error);
     }
-
-    const existingCartItem = user.cart.find(
-      (item) => item.cartId.toString() === unifiedDataid
-    );
-
-    if (existingCartItem) {
-      
-      existingCartItem.quantity = quantity;
-    } else {
-      user.cart.push({ unifiedDataid, quantity });
-    }
-    await user.save();
-    res.status(200).json({ message: 'Cart updated successfully', user });
-  } catch (error) {
-    next(error);
-  }
-};
-
-}
+  };
+  
