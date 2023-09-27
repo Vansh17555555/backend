@@ -16,7 +16,6 @@ const itemSchema = new mongoose.Schema({
 
 const subcategorySchema = new mongoose.Schema({
   name: String,
-  img:String,
   data: [itemSchema],
 });
 

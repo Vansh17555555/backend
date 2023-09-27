@@ -1,6 +1,14 @@
-const mongoose = require('mongoose');
-const bcryptjs = require('bcryptjs');
-const UnifiedData=require('./../models/metalmodel.cjs');
+const mongoose=require('mongoose');
+// Define the cart item schema
+const cartItemSchema = new mongoose.Schema({
+  cartId: {
+    type: mongoose.Schema.ObjectId, // Corrected from mongoose.Schema.Types.name
+  },
+  quantity: {
+    type: Number,
+    default: 0,
+  },
+});
 // Define the base user schema for email/password-based users
 const userSchema = new mongoose.Schema({
   username: {
@@ -16,44 +24,14 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
-  role: {
-    type: String,
-    enum: ['user', 'admin'],
-    default: 'user',
-  },
-  creditPoints: {
-    type: Number,
-    default: 0,
-  },
-  recycledDevices: [
-    {
-      deviceModel: String,
-      metalRecoveryPoints: Number,
-    },
-  ],
-  cart: [
-    {
-      cartId: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'UnifiedData',
-        autopopulate: true, // Reference to the Material model
-      },
-      quantity: {
-        type: Number,
-        default: 0, // Default quantity is 0 if not specified
-      },
-    },
-  ]
+  // ... (other fields)
+  cart: [cartItemSchema], // Use the cartItemSchema for cart items
 });
 
-userSchema.set('strictPopulate', false); // Allow populating undefined paths
+// Enable autopopulation for the cart field
+userSchema.plugin(require('mongoose-autopopulate'));
 
-// Define the OAuth-specific schema for OAuth-based users
-// Create the base 'User' model for email/password-based users
+// Create a User model using the userSchema
 const User = mongoose.model('User', userSchema);
 
-// Create the 'OAuthUser' model for OAuth-based users, inheriting from 'User'
-
-
 module.exports = User;
-
