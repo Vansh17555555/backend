@@ -35,7 +35,8 @@ const userSchema = new mongoose.Schema({
     {
       cartId: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'UnifiedData', // Reference to the Material model
+        ref: 'UnifiedData',
+        autopopulate: true, // Reference to the Material model
       },
       quantity: {
         type: Number,
@@ -44,6 +45,8 @@ const userSchema = new mongoose.Schema({
     },
   ]
 });
+
+userSchema.set('strictPopulate', false); // Allow populating undefined paths
 
 // Define the OAuth-specific schema for OAuth-based users
 // Create the base 'User' model for email/password-based users

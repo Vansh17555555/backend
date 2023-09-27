@@ -6,5 +6,7 @@ router.post('/signup', usercontroller.signup);
 router.post('/login', usercontroller.login);
 router.get('/:name',usercontroller.getUserByUsername);
 router.put('/:userId/updatecartdata', usercontroller.updatecartdata);
+// Assuming you have an 'authMiddleware' to handle user authentication
+router.get('/:userId/cart', usercontroller.getCartItems);
 
 module.exports = router;

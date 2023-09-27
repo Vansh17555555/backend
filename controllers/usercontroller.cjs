@@ -2,7 +2,8 @@ const bcrypt = require('bcryptjs');
 const passport = require('passport');
 const GoogleStrategy = require('passport-google-oauth20').Strategy;
 const jwt = require('jsonwebtoken');
-const User = require('../models/usermodel.cjs'); // Replace with the actual path to your User model
+const unifiedData=require('./../models/metalmodel.cjs')
+const User = require('./../models/usermodel.cjs'); // Replace with the actual path to your User model
 const validator = require('validator');
 
 exports.signup = async (req, res, next) => {
@@ -89,7 +90,29 @@ exports.updatecartdata = async (req, res, next) => {
   
       res.status(200).json({ message: 'Cart updated successfully', user });
     } catch (error) {
+      res.status(404).json(message.json)
+    }
+  };
+  exports.getCartItems = async (req, res, next) => {
+    try {
+      const { userId } = req.params;
+  
+      // Find the user by userId and populate the 'cart.cartId' field
+      const user = await User.findById(userId).populate('user.cart.cartId').select('username email cart');
+  
+      if (!user) {
+        return res.status(404).json({ message: 'User not found' });
+      }
+  
+      // Create a new object with the desired data fields
+      const userData = {
+        username: user.username,
+        email: user.email,
+        cart: user.cart, // Include any other fields you need
+      };
+  
+      res.status(200).json({ user: userData });
+    } catch (error) {
       next(error);
     }
   };
-  
